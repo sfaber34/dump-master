@@ -1,0 +1,87 @@
+export const CONFIG = {
+  game: {
+    width: 960,
+    height: 640,
+    backgroundColor: '#1a1a2e',
+    winTimeSeconds: 60,
+    parentElementId: 'game',
+    pixelArt: true,
+  },
+
+  player: {
+    size: 24,
+    color: 0x4ade80,
+    speed: 220,
+    startX: 480,
+    startY: 320,
+  },
+
+  meter: {
+    fillRatePerSecond: 4,
+    max: 100,
+    barX: 20,
+    barY: 30,
+    barWidth: 320,
+    barHeight: 26,
+    barBorderColor: 0xffffff,
+    barBorderThickness: 2,
+    barBackgroundColor: 0x222222,
+    fillColorLow: 0x22c55e,
+    fillColorMid: 0xeab308,
+    fillColorHigh: 0xef4444,
+    midThreshold: 50,
+    highThreshold: 80,
+    labelText: 'DUMP METER',
+    labelColor: '#ffffff',
+    labelFontSize: '14px',
+    labelOffsetY: -18,
+  },
+
+  bathroom: {
+    width: 48,
+    height: 48,
+    color: 0x60a5fa,
+    cooldownColor: 0x6b7280,
+    cooldownSeconds: 5,
+    relieveAmount: 100,
+    labelText: 'WC',
+    labelColor: '#ffffff',
+    labelFontSize: '14px',
+    positions: [
+      { x: 120, y: 120 },
+      { x: 840, y: 120 },
+      { x: 120, y: 520 },
+      { x: 840, y: 520 },
+    ],
+  },
+
+  hud: {
+    timerX: 940,
+    timerY: 20,
+    timerColor: '#ffffff',
+    timerFontSize: '20px',
+    timerLabel: 'TIME',
+  },
+
+  end: {
+    winText: 'YOU SURVIVED!',
+    loseText: 'YOU POOPED YOUR PANTS',
+    winColor: '#22c55e',
+    loseColor: '#ef4444',
+    titleFontSize: '44px',
+    promptText: 'Press R to restart',
+    promptColor: '#ffffff',
+    promptFontSize: '20px',
+    promptOffsetY: 80,
+    overlayAlpha: 0.6,
+    overlayColor: 0x000000,
+  },
+
+  input: {
+    up: 'W',
+    down: 'S',
+    left: 'A',
+    right: 'D',
+    restart: 'R',
+  },
+};
